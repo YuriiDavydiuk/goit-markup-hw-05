@@ -585,7 +585,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
+        <form class="footer-form" name="subscribe-form">
           <label class="footer-form-text" for="email">Subscribe</label>
           <input
             class="footer-form-input"
@@ -594,40 +594,72 @@
             id="email"
           />
           <button class="footer-form-button" type="submit">Subscribe</button>
-          <svg class="footer-form-icon" width="24" height="20">
+          <!-- <svg class="footer-form-icon" width="24" height="20">
             <use href="./images/icons.svg#icon-footer-send-icon"></use>
-          </svg>
-        </div>
+          </svg> -->
+        </form>
       </div>
     </footer>
 
-    <form>
-      <svg width="8" height="8">
-        <use href="./images/icons.svg#icon-form-close-icon"></use>
-      </svg>
-      <p>Leave your contacts and we will call you back</p>
-      <label for="name">Name</label>
-      <svg widtg="13" height="13">
-        <use href="./images/icons.svg#icon-modal-name-icon"></use>
-      </svg>
-      <input type="text" id="name" />
-      <label for="phone">Phone</label>
-      <svg widtg="13" height="13">
-        <use href="./images/icons.svg#icon-modal-phone-icon"></use>
-      </svg>
-      <input type="number" id="phone" />
-      <label for="email">Email</label>
-      <svg widtg="13" height="13">
-        <use href="./images/icons.svg#icon-modal-email-icon"></use>
-      </svg>
-      <input type="email" id="email" />
-      <label for="comment">Comment</label>
-      <textarea placeholder="text input" rows="4"></textarea>
-      <label for="conditions"
-        >I accept the terms and conditions of the <a href="#">Privacy Policy</a></label
-      >
-      <input type="checkbox" id="conditions" />
-      <button type="submit">Send</button>
-    </form>
+    <!-- Modal Window -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-button" type="button">
+          <svg class="modal-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-form-close-icon"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="modal-form" name="contacts">
+          <div class="modal-form-field">
+            <label for="user-name">Name</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="text" id="user-name" name="user-name" />
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-modal-name-icon"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label for="user-phone">Phone</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="number" id="user-phone" name="user-phone" />
+              <svg class="modal-form-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-modal-phone-icon"></use>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="modal-form-field">
+            <label for="user-email">Email</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="email" id="user-email" name="user-email" />
+              <svg class="modal-form-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-modal-email-icon"></use>
+              </svg>
+            </div>
+          </div>
+
+          <label for="user-comment">Comment</label>
+          <textarea
+            placeholder="Text input"
+            rows="4"
+            id="user-comment"
+          ></textarea>
+
+          <label for="conditions"
+            >I accept the terms and conditions of the
+            <a href="#">Privacy Policy</a></label
+          >
+          <input type="checkbox" id="conditions" />
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
