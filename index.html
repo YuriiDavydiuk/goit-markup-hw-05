@@ -68,7 +68,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -602,9 +604,9 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-button" type="button">
+        <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-form-close-icon"></use>
           </svg>
@@ -617,7 +619,12 @@
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="text" id="user-name" name="user-name" />
+              <input
+                class="modal-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
               <svg class="modal-form-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-modal-name-icon"></use>
               </svg>
@@ -627,17 +634,27 @@
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="number" id="user-phone" name="user-phone" />
+              <input
+                class="modal-form-input"
+                type="phone"
+                id="user-phone"
+                name="user-phone"
+              />
               <svg class="modal-form-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-modal-phone-icon"></use>
               </svg>
             </div>
           </div>
-          
+
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-email">Email</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="email" id="user-email" name="user-email" />
+              <input
+                class="modal-form-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+              />
               <svg class="modal-form-icon" width="15" height="12">
                 <use href="./images/icons.svg#icon-modal-email-icon"></use>
               </svg>
@@ -645,21 +662,26 @@
           </div>
 
           <label for="user-comment">Comment</label>
-          <textarea class="modal-form-message"
+          <textarea
+            class="modal-form-message"
             placeholder="Text input"
             rows="4"
             id="user-comment"
           ></textarea>
 
-          <label for="conditions"
-            >I accept the terms and conditions of the
-            <a href="#">Privacy Policy</a></label
-          >
-          <input type="checkbox" id="conditions" />
-
-          <button type="submit">Send</button>
+          <div class="modal-form-conditions">
+            <input type="checkbox" id="conditions" />
+            <label for="conditions"> <span>
+              <svg class="conditions-icon">
+                <use href="./images/icons.svg#icon-modal-form-checkbox" width="10" height="8"></use>
+              </svg>
+            </span>I accept the terms and conditions of the <a class="conditions-text" href="#">Privacy Policy</a></label>
+          </div>
+          <button class="modal-submit-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
