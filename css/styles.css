@@ -663,9 +663,51 @@ a:active {
   color: rgba(46, 47, 66, 0.4);
 }
 
+/* #custom checkbox */
+
 .modal-form-conditions {
   margin-bottom: 24px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
+
+.conditions-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+
+  color:#fff;  
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+
+  cursor: pointer;
+  transition: background-color 300ms ease-in, border-color 300ms ease-in;
+}
+
+.modal-checkbox:checked + .modal-wrapper > .conditions-checkbox {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  color:#fff
+}
+
+.conditions-icon {
+  fill: currentColor;
+}
+
+.conditions-text {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+/* #endregion */
 
 .modal-submit-button {
   font-weight: 500;

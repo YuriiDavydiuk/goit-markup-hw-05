@@ -669,14 +669,20 @@
             id="user-comment"
           ></textarea>
 
+          <!-- custom checkbox -->
           <div class="modal-form-conditions">
-            <input type="checkbox" id="conditions" />
-            <label for="conditions"> <span>
-              <svg class="conditions-icon">
-                <use href="./images/icons.svg#icon-modal-form-checkbox" width="10" height="8"></use>
-              </svg>
-            </span>I accept the terms and conditions of the <a class="conditions-text" href="#">Privacy Policy</a></label>
+            <input class="modal-checkbox" type="checkbox" id="conditions" visibility hidden />
+            <label class="modal-wrapper" for="conditions"
+              ><span class="conditions-checkbox">
+                <svg class="conditions-icon" width="10" height="8">
+                  <use
+                    href="./images/icons.svg#icon-modal-form-checkbox"
+                  ></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="conditions-text" href="#">Privacy Policy</a></label
+            >
           </div>
+
           <button class="modal-submit-button" type="submit">Send</button>
         </form>
       </div>
