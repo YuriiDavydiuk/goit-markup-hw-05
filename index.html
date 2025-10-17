@@ -588,26 +588,28 @@
           </ul>
         </div>
 
-        <form class="footer-form" name="subscribe-form">
-          <label class="footer-form-text" for="email">Subscribe</label>
-          <div class="footer-form-wrapper">
-            <input
-              class="footer-form-input"
-              type="email"
-              placeholder="E-mail"
-              id="email"
-            />
+        <div class="footer-form-container">
+          <form class="footer-form" name="subscribe-form">
+            <label class="footer-form-text" for="email">Subscribe</label>
+            <div class="footer-form-wrapper">
+              <input
+                class="footer-form-input"
+                type="email"
+                placeholder="E-mail"
+                id="email"
+              />
 
-            <div class="footer-form-button-wrapper">
-              <button class="footer-form-button" type="submit">
-                Subscribe
-              </button>
-              <svg class="footer-form-icon" width="24" height="20">
-                <use href="./images/icons.svg#icon-footer-send-icon"></use>
-              </svg>
+              <div class="footer-form-button-wrapper">
+                <button class="footer-form-button" type="submit">
+                  Subscribe
+                </button>
+                <svg class="footer-form-icon" width="24" height="20">
+                  <use href="./images/icons.svg#icon-footer-send-icon"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -633,7 +635,7 @@
                 id="user-name"
                 name="user-name"
               />
-              <svg class="modal-form-icon" width="12" height="12">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-modal-name-icon"></use>
               </svg>
             </div>
@@ -644,11 +646,11 @@
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
-                type="phone"
+                type="tel"
                 id="user-phone"
                 name="user-phone"
               />
-              <svg class="modal-form-icon" width="13" height="13">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-modal-phone-icon"></use>
               </svg>
             </div>
@@ -663,29 +665,24 @@
                 id="user-email"
                 name="user-email"
               />
-              <svg class="modal-form-icon" width="15" height="12">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-modal-email-icon"></use>
               </svg>
             </div>
           </div>
 
-          <label for="user-comment">Comment</label>
-          <textarea
-            class="modal-form-message"
-            placeholder="Text input"
-            rows="4"
-            id="user-comment"
-          ></textarea>
-
+          <div>
+            <label for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-message"
+              placeholder="Text input"
+              rows="4"
+              id="user-comment"
+            ></textarea>
+          </div>
           <!-- custom checkbox -->
           <div class="modal-form-conditions">
-            <input
-              class="modal-checkbox"
-              type="checkbox"
-              id="conditions"
-              visibility
-              hidden
-            />
+            <input class="modal-checkbox" type="checkbox" id="conditions" />
             <label class="modal-wrapper" for="conditions"
               ><span class="conditions-checkbox">
                 <svg class="conditions-icon" width="10" height="8">
