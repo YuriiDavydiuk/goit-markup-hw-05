@@ -650,7 +650,7 @@ a:active {
   top: 28px;
   right: 24px;
 
-  transition: color 250ms ease-in, background-color 250ms ease-in;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-icon {
@@ -693,7 +693,7 @@ a:active {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: none;
-  transition: border-color 300ms ease-in;
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus,
@@ -706,7 +706,7 @@ a:active {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: fill 300ms ease-in;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -722,7 +722,7 @@ a:active {
   padding: 8px 16px;
   outline: none;
 
-  transition: border-color 300ms ease-in;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-message::placeholder {
@@ -756,7 +756,7 @@ a:active {
   border: 1px solid rgba(46, 47, 66, 0.4);
 
   cursor: pointer;
-  transition: background-color 300ms ease-in, border-color 300ms ease-in;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .modal-wrapper > .conditions-checkbox {
