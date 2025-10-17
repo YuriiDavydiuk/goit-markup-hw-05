@@ -587,18 +587,26 @@
             </li>
           </ul>
         </div>
+
         <form class="footer-form" name="subscribe-form">
           <label class="footer-form-text" for="email">Subscribe</label>
-          <input
-            class="footer-form-input"
-            type="email"
-            placeholder="E-mail"
-            id="email"
-          />
-          <button class="footer-form-button" type="submit">Subscribe</button>
-          <!-- <svg class="footer-form-icon" width="24" height="20">
-            <use href="./images/icons.svg#icon-footer-send-icon"></use>
-          </svg> -->
+          <div class="footer-form-wrapper">
+            <input
+              class="footer-form-input"
+              type="email"
+              placeholder="E-mail"
+              id="email"
+            />
+
+            <div class="footer-form-button-wrapper">
+              <button class="footer-form-button" type="submit">
+                Subscribe
+              </button>
+              <svg class="footer-form-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-footer-send-icon"></use>
+              </svg>
+            </div>
+          </div>
         </form>
       </div>
     </footer>
@@ -671,7 +679,13 @@
 
           <!-- custom checkbox -->
           <div class="modal-form-conditions">
-            <input class="modal-checkbox" type="checkbox" id="conditions" visibility hidden />
+            <input
+              class="modal-checkbox"
+              type="checkbox"
+              id="conditions"
+              visibility
+              hidden
+            />
             <label class="modal-wrapper" for="conditions"
               ><span class="conditions-checkbox">
                 <svg class="conditions-icon" width="10" height="8">
