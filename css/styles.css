@@ -526,7 +526,7 @@ a:active {
   margin-bottom: 16px;
 }
 
-.footer-form-wrapper {
+.footer-form {
   display: flex;
   gap: 24px;
 }
@@ -781,7 +781,7 @@ a:active {
 
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
