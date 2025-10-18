@@ -671,19 +671,27 @@
             </div>
           </div>
 
-          <div>
-            <label for="user-comment">Comment</label>
+          <div class="modal-user-comment">
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-message"
               placeholder="Text input"
               rows="4"
               id="user-comment"
+              name="user-comment"
             ></textarea>
           </div>
+
           <!-- custom checkbox -->
           <div class="modal-form-conditions">
-            <input class="modal-checkbox" type="checkbox" id="conditions" />
-            <label class="modal-wrapper" for="conditions"
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+            />
+            <label class="modal-wrapper" for="user-privacy"
               ><span class="conditions-checkbox">
                 <svg class="conditions-icon" width="10" height="8">
                   <use
