@@ -557,7 +557,8 @@ a:active {
 }
 
 .footer-form-input:focus {
-  background-color: #fff;
+  background-color: inherit;
+  color: #fff;
 }
 
 .footer-form-button {
